@@ -522,12 +522,8 @@ def gear_design(P_yc: float, n_yc: float, u_total: float, L_h: float,
     else:
         Y_beta = 1.0
 
-    # --- Y_eps: He so ke den su trung khop cua rang ---
-    # Y_eps = 1 / epsilon_alpha (Theo Trinh Chat Cong thuc 6.43)
     Y_eps = 1.0 / epsilon_alpha
 
-    # === CONG THUC CHINH: sigma_F ===
-    # sigma_F1 = 2*T1*K_F*Y_eps*Y_beta*Y_F1 / (b_w * d_w1 * m)
     sigma_F1 = 2 * T1 * K_F * Y_eps * Y_F1 * Y_beta / (b_w * d_w1 * m)
     sigma_F2 = 2 * T1 * K_F * Y_eps * Y_F2 * Y_beta / (b_w * d_w1 * m)
     
