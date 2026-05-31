@@ -1,0 +1,23 @@
+[
+  {"matID": "1",  "matName": "40 - Tôi cải thiện - s<=60",         "sigmaHlim_base": 490,    "sigmaFlim_base": 378,   "sigma_ch": 400, "sigma_b": 700, "hardnessHB_max": 228, "hardnessHB_min": 192},
+  {"matID": "2",  "matName": "45 - Thường hóa - s<=80",            "sigmaHlim_base": 457,    "sigmaFlim_base": 348.3, "sigma_ch": 340, "sigma_b": 600, "hardnessHB_max": 217, "hardnessHB_min": 170},
+  {"matID": "3",  "matName": "45 - Tôi cải thiện - s<=100",        "sigmaHlim_base": 502,    "sigmaFlim_base": 388.8, "sigma_ch": 450, "sigma_b": 750, "hardnessHB_max": 240, "hardnessHB_min": 192},
+  {"matID": "4",  "matName": "45 - Tôi cải thiện - s<=60",         "sigmaHlim_base": 596,    "sigmaFlim_base": 473.4, "sigma_ch": 580, "sigma_b": 850, "hardnessHB_max": 285, "hardnessHB_min": 241},
+  {"matID": "5",  "matName": "50 - Thường hóa - s<=80",            "sigmaHlim_base": 477,    "sigmaFlim_base": 366.3, "sigma_ch": 350, "sigma_b": 640, "hardnessHB_max": 228, "hardnessHB_min": 179},
+  {"matID": "6",  "matName": "50 - Tôi cải thiện - s<=80",         "sigmaHlim_base": 553,    "sigmaFlim_base": 434.7, "sigma_ch": 530, "sigma_b": 700, "hardnessHB_max": 255, "hardnessHB_min": 228},
+  {"matID": "7",  "matName": "40X - Tôi cải thiện - s<=100",       "sigmaHlim_base": 560,    "sigmaFlim_base": 441,   "sigma_ch": 550, "sigma_b": 850, "hardnessHB_max": 260, "hardnessHB_min": 230},
+  {"matID": "8",  "matName": "40X - Tôi cải thiện - s<=60",        "sigmaHlim_base": 610,    "sigmaFlim_base": 486,   "sigma_ch": 700, "sigma_b": 950, "hardnessHB_max": 280, "hardnessHB_min": 260},
+  {"matID": "9",  "matName": "40X - Thấm nito - s<=60",            "sigmaHlim_base": 1050,   "sigmaFlim_base": 414,   "sigma_ch": 800, "sigma_b": 1000,"hardnessHB_max": 634, "hardnessHB_min": 481},
+  {"matID": "10", "matName": "45X - Tôi cải thiện - s<=100",       "sigmaHlim_base": 580,    "sigmaFlim_base": 459,   "sigma_ch": 650, "sigma_b": 850, "hardnessHB_max": 280, "hardnessHB_min": 230},
+  {"matID": "11", "matName": "45X - Tôi cải thiện - 100<=s<=300",  "sigmaHlim_base": 502,    "sigmaFlim_base": 388.8, "sigma_ch": 500, "sigma_b": 750, "hardnessHB_max": 269, "hardnessHB_min": 163},
+  {"matID": "12", "matName": "45X - Tôi cải thiện - 300<=s<=500",  "sigmaHlim_base": 502,    "sigmaFlim_base": 388.8, "sigma_ch": 450, "sigma_b": 700, "hardnessHB_max": 269, "hardnessHB_min": 163},
+  {"matID": "13", "matName": "40XH - Tôi cải thiện - s<=100",      "sigmaHlim_base": 600,    "sigmaFlim_base": 477,   "sigma_ch": 600, "sigma_b": 850, "hardnessHB_max": 300, "hardnessHB_min": 230},
+  {"matID": "14", "matName": "40XH - Tôi cải thiện - 100<=s<=300", "sigmaHlim_base": 552,    "sigmaFlim_base": 433.8, "sigma_ch": 580, "sigma_b": 800, "hardnessHB_max": 241, "hardnessHB_min": 241},
+  {"matID": "15", "matName": "40XH - Tôi - s<=40",                 "sigmaHlim_base": 1068,   "sigmaFlim_base": 550,   "sigma_ch": 1400,"sigma_b": 1600,"hardnessHB_max": 543, "hardnessHB_min": 451},
+  {"matID": "16", "matName": "35XM - Tôi cải thiện - s<=100",      "sigmaHlim_base": 552,    "sigmaFlim_base": 433.8, "sigma_ch": 800, "sigma_b": 900, "hardnessHB_max": 241, "hardnessHB_min": 241},
+  {"matID": "17", "matName": "35XM - Tôi cải thiện - s<=50",       "sigmaHlim_base": 608,    "sigmaFlim_base": 484.2, "sigma_ch": 800, "sigma_b": 900, "hardnessHB_max": 269, "hardnessHB_min": 269},
+  {"matID": "18", "matName": "35XM - Tôi cải thiện - s<=40",       "sigmaHlim_base": 1032,   "sigmaFlim_base": 550,   "sigma_ch": 1400,"sigma_b": 1600,"hardnessHB_max": 532, "hardnessHB_min": 423},
+  {"matID": "19", "matName": "20X - Thấm cacbon - s<=60",          "sigmaHlim_base": 1138.5, "sigmaFlim_base": 750,   "sigma_ch": 400, "sigma_b": 650, "hardnessHB_max": 532, "hardnessHB_min": 432},
+  {"matID": "20", "matName": "12XH3A - Thấm cacbon - s<=60",       "sigmaHlim_base": 1368.5, "sigmaFlim_base": 750,   "sigma_ch": 700, "sigma_b": 900, "hardnessHB_max": 705, "hardnessHB_min": 578},
+  {"matID": "21", "matName": "25XTT - Thấm cacbon",                "sigmaHlim_base": 1391.5, "sigmaFlim_base": 750,   "sigma_ch": 950, "sigma_b": 1150,"hardnessHB_max": 705, "hardnessHB_min": 615}
+]

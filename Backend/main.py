@@ -1,34 +1,29 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-try:
-    from Backend.routers import projects, calculations, exports, auth
-except ImportError:
-    try:
-        from routers import projects, calculations, exports, auth
-    except ImportError:
-        from .routers import projects, calculations, exports, auth
+from routers import users, projects, standards, ai_engine
 
-app = FastAPI(title="MechDesign Pro - API Gateway")
+app = FastAPI(
+    title="MechDrive Studio API",
+    description="Backend API with AI Engine for MechDrive Studio",
+    version="1.0.0"
+)
 
-# Cho phép ReactJS (Frontend) gọi API
+# CORS configuration
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5174"], # Link ReactJS mặc định
+    allow_origins=["*"], # For dev, allow all. Change in prod.
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
+# Include routers
+app.include_router(users.router)
 app.include_router(projects.router)
-app.include_router(calculations.router)
-app.include_router(exports.router)
-app.include_router(auth.router)
+app.include_router(standards.router)
+app.include_router(ai_engine.router)
 
 @app.get("/")
-def health_check():
-    return {"status": "Tác tử Async FastAPI đang hoạt động"}
-
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+def root():
+    return {"message": "Welcome to MechDrive Studio API"}

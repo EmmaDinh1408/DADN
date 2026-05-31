@@ -1,0 +1,177 @@
+DROP TABLE IF EXISTS "GEAR_TRANS" CASCADE;
+DROP TABLE IF EXISTS "CHAIN_TRANS" CASCADE;
+DROP TABLE IF EXISTS "TRANSMISSION" CASCADE;
+DROP TABLE IF EXISTS "DESIGN_SCHEME" CASCADE;
+DROP TABLE IF EXISTS "PROJECT" CASCADE;
+DROP TABLE IF EXISTS "STD_CENTER_DISTANCE" CASCADE;
+DROP TABLE IF EXISTS "STD_MODULE" CASCADE;
+DROP TABLE IF EXISTS "STD_MATERIAL" CASCADE;
+DROP TABLE IF EXISTS "STD_CHAIN" CASCADE;
+DROP TABLE IF EXISTS "STD_MOTOR" CASCADE;
+DROP TABLE IF EXISTS "USER_ACCOUNT" CASCADE;
+
+CREATE TABLE "USER_ACCOUNT" (
+    "userID" INT GENERATED ALWAYS AS IDENTITY,
+    "userName" VARCHAR(100) NOT NULL,
+    "joinedDate" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    "password" VARCHAR(255) NOT NULL,
+    "email" VARCHAR(150) NOT NULL UNIQUE,
+    CONSTRAINT "PK_USER_ACCOUNT" PRIMARY KEY ("userID"),
+    CONSTRAINT "CHK_USER_EMAIL" CHECK ("email" LIKE '%@%.%')
+);
+
+CREATE TABLE "STD_MOTOR" (
+    "motorCode" VARCHAR(50) NOT NULL,
+    "P_dm" NUMERIC(6, 2) NOT NULL,
+    "n_dm" NUMERIC(6, 1) NOT NULL,
+    --"motorMass" NUMERIC(6, 2) NOT NULL,
+    "torqueRatio" NUMERIC(3, 1) NOT NULL,
+    CONSTRAINT "PK_STD_MOTOR" PRIMARY KEY ("motorCode"),
+    CONSTRAINT "CHK_MOTOR_PDM" CHECK ("P_dm" > 0),
+    CONSTRAINT "CHK_MOTOR_NDM" CHECK ("n_dm" > 0),
+    --CONSTRAINT "CHK_MOTOR_MASS" CHECK ("motorMass" > 0),
+    CONSTRAINT "CHK_MOTOR_TORQUE" CHECK ("torqueRatio" > 0)
+);
+
+CREATE TABLE "STD_CHAIN" (
+    "chainID" VARCHAR(50) NOT NULL,
+    "breakingLoad_Q" NUMERIC(8, 2) NOT NULL,
+    "massPerMeter_q" NUMERIC(5, 2) NOT NULL,
+    "pitch_p" NUMERIC(5, 2) NOT NULL,
+    "numStrands" INT NOT NULL DEFAULT 1,
+    CONSTRAINT "PK_STD_CHAIN" PRIMARY KEY ("chainID"),
+    CONSTRAINT "CHK_CHAIN_Q" CHECK ("breakingLoad_Q" > 0),
+    CONSTRAINT "CHK_CHAIN_MASS" CHECK ("massPerMeter_q" > 0),
+    CONSTRAINT "CHK_CHAIN_PITCH" CHECK ("pitch_p" > 0),
+    CONSTRAINT "CHK_CHAIN_STRANDS" CHECK ("numStrands" BETWEEN 1 AND 4)
+);
+
+CREATE TABLE "STD_MATERIAL" (
+    "matID" VARCHAR(50) NOT NULL,
+    "matName" VARCHAR(100) NOT NULL,
+    "sigmaHlim_base" NUMERIC(6, 2) NOT NULL,
+    "sigmaFlim_base" NUMERIC(6, 2) NOT NULL,
+    "sigma_ch" NUMERIC(6, 2) NOT NULL,
+    "sigma_b" NUMERIC(6, 2) NOT NULL,
+    "hardnessHB_max" INT NOT NULL,
+    "hardnessHB_min" INT NOT NULL,
+    CONSTRAINT "PK_STD_MATERIAL" PRIMARY KEY ("matID"),
+    CONSTRAINT "CHK_MAT_STRESS" CHECK ("sigmaHlim_base" > 0 AND "sigmaFlim_base" > 0 AND "sigma_ch" > 0 AND "sigma_b" > 0),
+    CONSTRAINT "CHK_MAT_HARDNESS" CHECK ("hardnessHB_max" >= "hardnessHB_min" AND "hardnessHB_min" > 0)
+);
+
+CREATE TABLE "STD_MODULE" (
+    "modVal" NUMERIC(4, 2) NOT NULL,
+    "prefSeries" INT NOT NULL,
+    CONSTRAINT "PK_STD_MODULE" PRIMARY KEY ("modVal"),
+    CONSTRAINT "CHK_MOD_VAL" CHECK ("modVal" > 0),
+    CONSTRAINT "CHK_MOD_SERIES" CHECK ("prefSeries" IN (1, 2))
+);
+
+CREATE TABLE "STD_CENTER_DISTANCE" (
+    "awValue" NUMERIC(6, 1) NOT NULL,
+    "prefSeries" INT NOT NULL,
+    CONSTRAINT "PK_STD_CENTER_DISTANCE" PRIMARY KEY ("awValue"),
+    CONSTRAINT "CHK_AW_VAL" CHECK ("awValue" > 0),
+    CONSTRAINT "CHK_AW_SERIES" CHECK ("prefSeries" IN (1, 2))
+);
+
+CREATE TABLE "PROJECT" (
+    "projectID" INT GENERATED ALWAYS AS IDENTITY,
+    "projectName" VARCHAR(200) NOT NULL,
+    "projectDescription" TEXT,
+    "userID" INT NOT NULL,
+    "createdDate" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    CONSTRAINT "PK_PROJECT" PRIMARY KEY ("projectID"),
+    CONSTRAINT "FK_PROJECT_USER" FOREIGN KEY ("userID") REFERENCES "USER_ACCOUNT"("userID") ON DELETE CASCADE
+);
+
+CREATE TABLE "DESIGN_SCHEME" (
+    "projectID" INT NOT NULL,
+    "schemeNo" INT NOT NULL,
+    "operation_mode" VARCHAR(50) NOT NULL,
+    "L_h" INT NOT NULL,
+    "shiftNum" INT NOT NULL,
+    "date" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    "status" VARCHAR(20) NOT NULL,
+    "P_dc" NUMERIC(6, 2) NOT NULL,
+    "n_dc" NUMERIC(6, 1) NOT NULL,
+    "u_total" NUMERIC(5, 2) NOT NULL,
+    "load_type" VARCHAR(50) NOT NULL,
+    "motorCode" VARCHAR(50),
+    CONSTRAINT "PK_DESIGN_SCHEME" PRIMARY KEY ("projectID", "schemeNo"),
+    CONSTRAINT "FK_SCHEME_PROJECT" FOREIGN KEY ("projectID") REFERENCES "PROJECT"("projectID") ON DELETE CASCADE,
+    CONSTRAINT "FK_SCHEME_MOTOR" FOREIGN KEY ("motorCode") REFERENCES "STD_MOTOR"("motorCode"),
+    CONSTRAINT "CHK_SCHEME_STATUS" CHECK ("status" IN ('PENDING', 'SUCCESS', 'FAILED')),
+    CONSTRAINT "CHK_SCHEME_SHIFT" CHECK ("shiftNum" BETWEEN 1 AND 3),
+    CONSTRAINT "CHK_SCHEME_LH" CHECK ("L_h" > 0),
+    CONSTRAINT "CHK_SCHEME_PDC" CHECK ("P_dc" > 0),
+    CONSTRAINT "CHK_SCHEME_NDC" CHECK ("n_dc" > 0),
+    CONSTRAINT "CHK_SCHEME_UTOTAL" CHECK ("u_total" >= 1),
+    CONSTRAINT "CHK_SCHEME_LOAD" CHECK ("load_type" IN ('Tĩnh', 'Va đập nhẹ', 'Va đập mạnh'))
+);
+
+CREATE TABLE "TRANSMISSION" (
+    "projectID" INT NOT NULL,
+    "schemeNo" INT NOT NULL,
+    "stageNo" INT NOT NULL,
+    "transtype" VARCHAR(10) NOT NULL,
+    "u_real" NUMERIC(5, 2),
+    "eff_eta" NUMERIC(4, 3),
+    "T_out" NUMERIC(12, 2),
+    "n_out" NUMERIC(6, 1),
+    CONSTRAINT "PK_TRANSMISSION" PRIMARY KEY ("projectID", "schemeNo", "stageNo"),
+    CONSTRAINT "FK_TRANS_SCHEME" FOREIGN KEY ("projectID", "schemeNo") REFERENCES "DESIGN_SCHEME"("projectID", "schemeNo") ON DELETE CASCADE,
+    CONSTRAINT "CHK_TRANS_TYPE" CHECK ("transtype" IN ('GEAR', 'CHAIN')),
+    CONSTRAINT "CHK_TRANS_STAGE" CHECK ("stageNo" >= 1),
+    CONSTRAINT "CHK_TRANS_UREAL" CHECK ("u_real" > 0),
+    CONSTRAINT "CHK_TRANS_EFF" CHECK ("eff_eta" > 0 AND "eff_eta" <= 1),
+    CONSTRAINT "CHK_TRANS_TOUT" CHECK ("T_out" > 0),
+    CONSTRAINT "CHK_TRANS_NOUT" CHECK ("n_out" > 0)
+);
+
+CREATE TABLE "CHAIN_TRANS" (
+    "projectID" INT NOT NULL,
+    "schemeNo" INT NOT NULL,
+    "stageNo" INT NOT NULL,
+    "chain_angle" NUMERIC(4, 1),
+    "lubrication_quality" VARCHAR(50),
+    "a_user_aw" NUMERIC(6, 1),
+    "optimal_ux" NUMERIC(4, 2) NOT NULL,
+    "optimal_z1" INT NOT NULL,
+    "chainID" VARCHAR(50),
+    "calculation_trace_report" JSONB NOT NULL DEFAULT '{}'::jsonb,
+    CONSTRAINT "PK_CHAIN_TRANS" PRIMARY KEY ("projectID", "schemeNo", "stageNo"),
+    CONSTRAINT "FK_CHAIN_TRANS_BASE" FOREIGN KEY ("projectID", "schemeNo", "stageNo") REFERENCES "TRANSMISSION"("projectID", "schemeNo", "stageNo") ON DELETE CASCADE,
+    CONSTRAINT "FK_CHAIN_TRANS_STD" FOREIGN KEY ("chainID") REFERENCES "STD_CHAIN"("chainID"),
+    CONSTRAINT "CHK_CHAIN_ANGLE" CHECK ("chain_angle" >= 0 AND "chain_angle" <= 90),
+    CONSTRAINT "CHK_CHAIN_AW" CHECK ("a_user_aw" > 0),
+    CONSTRAINT "CHK_CHAIN_UX" CHECK ("optimal_ux" > 0 AND "optimal_ux" <= 8),
+    CONSTRAINT "CHK_CHAIN_Z1" CHECK ("optimal_z1" >= 9)
+);
+
+CREATE TABLE "GEAR_TRANS" (
+    "projectID" INT NOT NULL,
+    "schemeNo" INT NOT NULL,
+    "stageNo" INT NOT NULL,
+    "optimal_ud" NUMERIC(4, 2) NOT NULL,
+    "gear_type" VARCHAR(50) NOT NULL,
+    "optimal_zg1" INT NOT NULL,
+    "modVal" NUMERIC(4, 2),
+    "awValue" NUMERIC(6, 1),
+    "matID" VARCHAR(50),
+    "calculation_trace_report" JSONB NOT NULL DEFAULT '{}'::jsonb,
+    CONSTRAINT "PK_GEAR_TRANS" PRIMARY KEY ("projectID", "schemeNo", "stageNo"),
+    CONSTRAINT "FK_GEAR_TRANS_BASE" FOREIGN KEY ("projectID", "schemeNo", "stageNo") REFERENCES "TRANSMISSION"("projectID", "schemeNo", "stageNo") ON DELETE CASCADE,
+    CONSTRAINT "FK_GEAR_TRANS_MOD" FOREIGN KEY ("modVal") REFERENCES "STD_MODULE"("modVal"),
+    CONSTRAINT "FK_GEAR_TRANS_AW" FOREIGN KEY ("awValue") REFERENCES "STD_CENTER_DISTANCE"("awValue"),
+    CONSTRAINT "FK_GEAR_TRANS_MAT" FOREIGN KEY ("matID") REFERENCES "STD_MATERIAL"("matID"),
+    CONSTRAINT "CHK_GEAR_UD" CHECK ("optimal_ud" > 0 AND "optimal_ud" <= 8),
+    CONSTRAINT "CHK_GEAR_Z1" CHECK ("optimal_zg1" >= 17)
+);
+
+ALTER TABLE "GEAR_TRANS"
+ADD COLUMN "optimal_psi_ba" NUMERIC(4, 3) NOT NULL,
+ADD CONSTRAINT "CHK_GEAR_PSI_BA_SEV" CHECK (
+    "optimal_psi_ba" IN (0.1, 0.125, 0.16, 0.2, 0.25, 0.315, 0.4, 0.5, 0.63, 0.8, 1.0, 1.25)
+);

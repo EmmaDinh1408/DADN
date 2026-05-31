@@ -1,0 +1,20 @@
+[
+  {"awValue": 40,  "prefSeries": 1},
+  {"awValue": 50,  "prefSeries": 1},
+  {"awValue": 63,  "prefSeries": 1},
+  {"awValue": 80,  "prefSeries": 1},
+  {"awValue": 100, "prefSeries": 1},
+  {"awValue": 125, "prefSeries": 1},
+  {"awValue": 140, "prefSeries": 2},
+  {"awValue": 160, "prefSeries": 1},
+  {"awValue": 180, "prefSeries": 2},
+  {"awValue": 200, "prefSeries": 1},
+  {"awValue": 225, "prefSeries": 2},
+  {"awValue": 250, "prefSeries": 1},
+  {"awValue": 280, "prefSeries": 2},
+  {"awValue": 315, "prefSeries": 1},
+  {"awValue": 355, "prefSeries": 2},
+  {"awValue": 400, "prefSeries": 1},
+  {"awValue": 450, "prefSeries": 2},
+  {"awValue": 500, "prefSeries": 1}
+]

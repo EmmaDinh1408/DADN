@@ -1,0 +1,40 @@
+# Env files (KHONG BAO GIO push key len public repo)
+.env
+.env.*
+.env.local
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+
+# Node
+node_modules/
+dist/
+build/
+.npm
+.yarn
+
+# Next.js build cache
+.next/
+
+# AI output (q_table, eval_log — file lon, co the tai tao)
+ai/output/
+
+# Old version (khong can push)
+oldver/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo

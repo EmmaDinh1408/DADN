@@ -1,0 +1,23 @@
+[
+  {"modVal": 1.25,  "prefSeries": 1},
+  {"modVal": 1.5,   "prefSeries": 1},
+  {"modVal": 2.0,   "prefSeries": 1},
+  {"modVal": 2.5,   "prefSeries": 1},
+  {"modVal": 3.0,   "prefSeries": 1},
+  {"modVal": 4.0,   "prefSeries": 1},
+  {"modVal": 5.0,   "prefSeries": 1},
+  {"modVal": 6.0,   "prefSeries": 1},
+  {"modVal": 8.0,   "prefSeries": 1},
+  {"modVal": 10.0,  "prefSeries": 1},
+  {"modVal": 12.0,  "prefSeries": 1},
+  {"modVal": 1.375, "prefSeries": 2},
+  {"modVal": 1.75,  "prefSeries": 2},
+  {"modVal": 2.25,  "prefSeries": 2},
+  {"modVal": 3.5,   "prefSeries": 2},
+  {"modVal": 4.5,   "prefSeries": 2},
+  {"modVal": 5.5,   "prefSeries": 2},
+  {"modVal": 7.0,   "prefSeries": 2},
+  {"modVal": 9.0,   "prefSeries": 2},
+  {"modVal": 11.0,  "prefSeries": 2},
+  {"modVal": 14.0,  "prefSeries": 2}
+]

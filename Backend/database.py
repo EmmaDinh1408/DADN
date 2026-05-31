@@ -1,13 +1,4 @@
-from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession
-from sqlalchemy.orm import declarative_base, sessionmaker
+from supabase import create_client, Client
+from config import settings
 
-DATABASE_URL = "sqlite+aiosqlite:///./mech_db.db"
-
-engine = create_async_engine(DATABASE_URL, echo=True)
-AsyncSessionLocal = sessionmaker(engine, class_=AsyncSession, expire_on_commit=False)
-
-Base = declarative_base()
-
-async def get_db():
-    async with AsyncSessionLocal() as session:
-        yield session
+supabase: Client = create_client(settings.SUPABASE_URL, settings.SUPABASE_KEY)

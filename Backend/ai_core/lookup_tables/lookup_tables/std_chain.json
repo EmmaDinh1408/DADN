@@ -1,0 +1,15 @@
+[
+  {"chainID": "1-12.7",   "breakingLoad_Q": 18.2,  "massPerMeter_q": 0.75, "pitch_p": 12.7,  "numStrands": 1},
+  {"chainID": "1-15.875", "breakingLoad_Q": 22.7,  "massPerMeter_q": 0.80, "pitch_p": 15.875,"numStrands": 1},
+  {"chainID": "1-19.05",  "breakingLoad_Q": 31.8,  "massPerMeter_q": 1.90, "pitch_p": 19.05, "numStrands": 1},
+  {"chainID": "1-25.4",   "breakingLoad_Q": 56.7,  "massPerMeter_q": 3.50, "pitch_p": 25.4,  "numStrands": 1},
+  {"chainID": "1-31.75",  "breakingLoad_Q": 88.5,  "massPerMeter_q": 5.00, "pitch_p": 31.75, "numStrands": 1},
+  {"chainID": "1-38.1",   "breakingLoad_Q": 127.0, "massPerMeter_q": 7.30, "pitch_p": 38.1,  "numStrands": 1},
+  {"chainID": "1-44.45",  "breakingLoad_Q": 172.4, "massPerMeter_q": 9.70, "pitch_p": 44.45, "numStrands": 1},
+  {"chainID": "1-50.8",   "breakingLoad_Q": 226.8, "massPerMeter_q": 12.6, "pitch_p": 50.8,  "numStrands": 1},
+  {"chainID": "2-12.7",   "breakingLoad_Q": 31.8,  "massPerMeter_q": 1.40, "pitch_p": 12.7,  "numStrands": 2},
+  {"chainID": "2-15.875", "breakingLoad_Q": 45.4,  "massPerMeter_q": 1.50, "pitch_p": 15.875,"numStrands": 2},
+  {"chainID": "2-19.05",  "breakingLoad_Q": 56.7,  "massPerMeter_q": 3.40, "pitch_p": 19.05, "numStrands": 2},
+  {"chainID": "2-25.4",   "breakingLoad_Q": 113.4, "massPerMeter_q": 6.60, "pitch_p": 25.4,  "numStrands": 2},
+  {"chainID": "2-31.75",  "breakingLoad_Q": 177.0, "massPerMeter_q": 9.50, "pitch_p": 31.75, "numStrands": 2}
+]

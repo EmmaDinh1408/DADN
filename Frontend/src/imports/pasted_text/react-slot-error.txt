@@ -1,0 +1,181 @@
+Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+3chunk-HDWYUXML.js?v=c2bb4e8f:760 Uncaught Error: React.Children.only expected to receive a single React element child.
+    at Object.onlyChild [as only] (chunk-HDWYUXML.js?v=c2bb4e8f:760:19)
+    at @radix-ui_react-slot.js?v=c2bb4e8f:66:64
+    at renderWithHooks (chunk-A4PLE5AR.js?v=c2bb4e8f:11548:26)
+    at updateForwardRef (chunk-A4PLE5AR.js?v=c2bb4e8f:14325:28)
+    at beginWork (chunk-A4PLE5AR.js?v=c2bb4e8f:15946:22)
+    at HTMLUnknownElement.callCallback2 (chunk-A4PLE5AR.js?v=c2bb4e8f:3674:22)
+    at Object.invokeGuardedCallbackDev (chunk-A4PLE5AR.js?v=c2bb4e8f:3699:24)
+    at invokeGuardedCallback (chunk-A4PLE5AR.js?v=c2bb4e8f:3733:39)
+    at beginWork$1 (chunk-A4PLE5AR.js?v=c2bb4e8f:19765:15)
+    at performUnitOfWork (chunk-A4PLE5AR.js?v=c2bb4e8f:19198:20)
+onlyChild @ chunk-HDWYUXML.js?v=c2bb4e8f:760
+(anonymous) @ @radix-ui_react-slot.js?v=c2bb4e8f:66
+renderWithHooks @ chunk-A4PLE5AR.js?v=c2bb4e8f:11548
+updateForwardRef @ chunk-A4PLE5AR.js?v=c2bb4e8f:14325
+beginWork @ chunk-A4PLE5AR.js?v=c2bb4e8f:15946
+callCallback2 @ chunk-A4PLE5AR.js?v=c2bb4e8f:3674
+invokeGuardedCallbackDev @ chunk-A4PLE5AR.js?v=c2bb4e8f:3699
+invokeGuardedCallback @ chunk-A4PLE5AR.js?v=c2bb4e8f:3733
+beginWork$1 @ chunk-A4PLE5AR.js?v=c2bb4e8f:19765
+performUnitOfWork @ chunk-A4PLE5AR.js?v=c2bb4e8f:19198
+workLoopSync @ chunk-A4PLE5AR.js?v=c2bb4e8f:19137
+renderRootSync @ chunk-A4PLE5AR.js?v=c2bb4e8f:19116
+performConcurrentWorkOnRoot @ chunk-A4PLE5AR.js?v=c2bb4e8f:18678
+workLoop @ chunk-A4PLE5AR.js?v=c2bb4e8f:197
+flushWork @ chunk-A4PLE5AR.js?v=c2bb4e8f:176
+performWorkUntilDeadline @ chunk-A4PLE5AR.js?v=c2bb4e8f:384
+postMessage
+schedulePerformWorkUntilDeadline @ chunk-A4PLE5AR.js?v=c2bb4e8f:407
+requestHostCallback @ chunk-A4PLE5AR.js?v=c2bb4e8f:418
+unstable_scheduleCallback @ chunk-A4PLE5AR.js?v=c2bb4e8f:330
+scheduleCallback$1 @ chunk-A4PLE5AR.js?v=c2bb4e8f:19826
+ensureRootIsScheduled @ chunk-A4PLE5AR.js?v=c2bb4e8f:18652
+scheduleUpdateOnFiber @ chunk-A4PLE5AR.js?v=c2bb4e8f:18562
+updateContainer @ chunk-A4PLE5AR.js?v=c2bb4e8f:20776
+ReactDOMHydrationRoot.render.ReactDOMRoot.render @ chunk-A4PLE5AR.js?v=c2bb4e8f:21116
+(anonymous) @ main.tsx:8Understand this error
+3chunk-HDWYUXML.js?v=c2bb4e8f:760 Uncaught Error: React.Children.only expected to receive a single React element child.
+    at Object.onlyChild [as only] (chunk-HDWYUXML.js?v=c2bb4e8f:760:19)
+    at @radix-ui_react-slot.js?v=c2bb4e8f:66:64
+    at renderWithHooks (chunk-A4PLE5AR.js?v=c2bb4e8f:11548:26)
+    at updateForwardRef (chunk-A4PLE5AR.js?v=c2bb4e8f:14325:28)
+    at beginWork (chunk-A4PLE5AR.js?v=c2bb4e8f:15946:22)
+    at HTMLUnknownElement.callCallback2 (chunk-A4PLE5AR.js?v=c2bb4e8f:3674:22)
+    at Object.invokeGuardedCallbackDev (chunk-A4PLE5AR.js?v=c2bb4e8f:3699:24)
+    at invokeGuardedCallback (chunk-A4PLE5AR.js?v=c2bb4e8f:3733:39)
+    at beginWork$1 (chunk-A4PLE5AR.js?v=c2bb4e8f:19765:15)
+    at performUnitOfWork (chunk-A4PLE5AR.js?v=c2bb4e8f:19198:20)
+onlyChild @ chunk-HDWYUXML.js?v=c2bb4e8f:760
+(anonymous) @ @radix-ui_react-slot.js?v=c2bb4e8f:66
+renderWithHooks @ chunk-A4PLE5AR.js?v=c2bb4e8f:11548
+updateForwardRef @ chunk-A4PLE5AR.js?v=c2bb4e8f:14325
+beginWork @ chunk-A4PLE5AR.js?v=c2bb4e8f:15946
+callCallback2 @ chunk-A4PLE5AR.js?v=c2bb4e8f:3674
+invokeGuardedCallbackDev @ chunk-A4PLE5AR.js?v=c2bb4e8f:3699
+invokeGuardedCallback @ chunk-A4PLE5AR.js?v=c2bb4e8f:3733
+beginWork$1 @ chunk-A4PLE5AR.js?v=c2bb4e8f:19765
+performUnitOfWork @ chunk-A4PLE5AR.js?v=c2bb4e8f:19198
+workLoopSync @ chunk-A4PLE5AR.js?v=c2bb4e8f:19137
+renderRootSync @ chunk-A4PLE5AR.js?v=c2bb4e8f:19116
+recoverFromConcurrentError @ chunk-A4PLE5AR.js?v=c2bb4e8f:18736
+performConcurrentWorkOnRoot @ chunk-A4PLE5AR.js?v=c2bb4e8f:18684
+workLoop @ chunk-A4PLE5AR.js?v=c2bb4e8f:197
+flushWork @ chunk-A4PLE5AR.js?v=c2bb4e8f:176
+performWorkUntilDeadline @ chunk-A4PLE5AR.js?v=c2bb4e8f:384
+postMessage
+schedulePerformWorkUntilDeadline @ chunk-A4PLE5AR.js?v=c2bb4e8f:407
+requestHostCallback @ chunk-A4PLE5AR.js?v=c2bb4e8f:418
+unstable_scheduleCallback @ chunk-A4PLE5AR.js?v=c2bb4e8f:330
+scheduleCallback$1 @ chunk-A4PLE5AR.js?v=c2bb4e8f:19826
+ensureRootIsScheduled @ chunk-A4PLE5AR.js?v=c2bb4e8f:18652
+scheduleUpdateOnFiber @ chunk-A4PLE5AR.js?v=c2bb4e8f:18562
+updateContainer @ chunk-A4PLE5AR.js?v=c2bb4e8f:20776
+ReactDOMHydrationRoot.render.ReactDOMRoot.render @ chunk-A4PLE5AR.js?v=c2bb4e8f:21116
+(anonymous) @ main.tsx:8Understand this error
+2chunk-A4PLE5AR.js?v=c2bb4e8f:14032 The above error occurred in the <Slot.SlotClone> component:
+
+    at http://localhost:5173/node_modules/.vite/deps/@radix-ui_react-slot.js?v=c2bb4e8f:54:11
+    at http://localhost:5173/node_modules/.vite/deps/@radix-ui_react-slot.js?v=c2bb4e8f:28:11
+    at Button2 (http://localhost:5173/src/components/common/Button.tsx:34:3)
+    at div
+    at MotionComponent (http://localhost:5173/node_modules/.vite/deps/motion_react.js?v=c2bb4e8f:925:40)
+    at div
+    at MotionComponent (http://localhost:5173/node_modules/.vite/deps/motion_react.js?v=c2bb4e8f:925:40)
+    at section
+    at div
+    at Dashboard (http://localhost:5173/src/pages/Dashboard.tsx:68:18)
+    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=c2bb4e8f:4131:5)
+    at Outlet (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=c2bb4e8f:4537:26)
+    at div
+    at main
+    at div
+    at div
+    at MainLayout
+    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=c2bb4e8f:4131:5)
+    at Routes (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=c2bb4e8f:4601:5)
+    at App
+    at Router (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=c2bb4e8f:4544:15)
+    at BrowserRouter (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=c2bb4e8f:5290:5)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+logCapturedError @ chunk-A4PLE5AR.js?v=c2bb4e8f:14032
+update.callback @ chunk-A4PLE5AR.js?v=c2bb4e8f:14052
+callCallback @ chunk-A4PLE5AR.js?v=c2bb4e8f:11248
+commitUpdateQueue @ chunk-A4PLE5AR.js?v=c2bb4e8f:11265
+commitLayoutEffectOnFiber @ chunk-A4PLE5AR.js?v=c2bb4e8f:17093
+commitLayoutMountEffects_complete @ chunk-A4PLE5AR.js?v=c2bb4e8f:17980
+commitLayoutEffects_begin @ chunk-A4PLE5AR.js?v=c2bb4e8f:17969
+commitLayoutEffects @ chunk-A4PLE5AR.js?v=c2bb4e8f:17920
+commitRootImpl @ chunk-A4PLE5AR.js?v=c2bb4e8f:19353
+commitRoot @ chunk-A4PLE5AR.js?v=c2bb4e8f:19277
+finishConcurrentRender @ chunk-A4PLE5AR.js?v=c2bb4e8f:18760
+performConcurrentWorkOnRoot @ chunk-A4PLE5AR.js?v=c2bb4e8f:18718
+workLoop @ chunk-A4PLE5AR.js?v=c2bb4e8f:197
+flushWork @ chunk-A4PLE5AR.js?v=c2bb4e8f:176
+performWorkUntilDeadline @ chunk-A4PLE5AR.js?v=c2bb4e8f:384
+postMessage
+schedulePerformWorkUntilDeadline @ chunk-A4PLE5AR.js?v=c2bb4e8f:407
+requestHostCallback @ chunk-A4PLE5AR.js?v=c2bb4e8f:418
+unstable_scheduleCallback @ chunk-A4PLE5AR.js?v=c2bb4e8f:330
+scheduleCallback$1 @ chunk-A4PLE5AR.js?v=c2bb4e8f:19826
+ensureRootIsScheduled @ chunk-A4PLE5AR.js?v=c2bb4e8f:18652
+scheduleUpdateOnFiber @ chunk-A4PLE5AR.js?v=c2bb4e8f:18562
+updateContainer @ chunk-A4PLE5AR.js?v=c2bb4e8f:20776
+ReactDOMHydrationRoot.render.ReactDOMRoot.render @ chunk-A4PLE5AR.js?v=c2bb4e8f:21116
+(anonymous) @ main.tsx:8Understand this error
+chunk-A4PLE5AR.js?v=c2bb4e8f:14032 The above error occurred in the <Slot.SlotClone> component:
+
+    at http://localhost:5173/node_modules/.vite/deps/@radix-ui_react-slot.js?v=c2bb4e8f:54:11
+    at http://localhost:5173/node_modules/.vite/deps/@radix-ui_react-slot.js?v=c2bb4e8f:28:11
+    at Button2 (http://localhost:5173/src/components/common/Button.tsx:34:3)
+    at div
+    at CardHeader (http://localhost:5173/src/components/common/Card.tsx:41:3)
+    at div
+    at Card (http://localhost:5173/src/components/common/Card.tsx:18:24)
+    at section
+    at div
+    at Dashboard (http://localhost:5173/src/pages/Dashboard.tsx:68:18)
+    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=c2bb4e8f:4131:5)
+    at Outlet (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=c2bb4e8f:4537:26)
+    at div
+    at main
+    at div
+    at div
+    at MainLayout
+    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=c2bb4e8f:4131:5)
+    at Routes (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=c2bb4e8f:4601:5)
+    at App
+    at Router (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=c2bb4e8f:4544:15)
+    at BrowserRouter (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=c2bb4e8f:5290:5)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+logCapturedError @ chunk-A4PLE5AR.js?v=c2bb4e8f:14032
+update.callback @ chunk-A4PLE5AR.js?v=c2bb4e8f:14052
+callCallback @ chunk-A4PLE5AR.js?v=c2bb4e8f:11248
+commitUpdateQueue @ chunk-A4PLE5AR.js?v=c2bb4e8f:11265
+commitLayoutEffectOnFiber @ chunk-A4PLE5AR.js?v=c2bb4e8f:17093
+commitLayoutMountEffects_complete @ chunk-A4PLE5AR.js?v=c2bb4e8f:17980
+commitLayoutEffects_begin @ chunk-A4PLE5AR.js?v=c2bb4e8f:17969
+commitLayoutEffects @ chunk-A4PLE5AR.js?v=c2bb4e8f:17920
+commitRootImpl @ chunk-A4PLE5AR.js?v=c2bb4e8f:19353
+commitRoot @ chunk-A4PLE5AR.js?v=c2bb4e8f:19277
+finishConcurrentRender @ chunk-A4PLE5AR.js?v=c2bb4e8f:18760
+performConcurrentWorkOnRoot @ chunk-A4PLE5AR.js?v=c2bb4e8f:18718
+workLoop @ chunk-A4PLE5AR.js?v=c2bb4e8f:197
+flushWork @ chunk-A4PLE5AR.js?v=c2bb4e8f:176
+performWorkUntilDeadline @ chunk-A4PLE5AR.js?v=c2bb4e8f:384
+postMessage
+schedulePerformWorkUntilDeadline @ chunk-A4PLE5AR.js?v=c2bb4e8f:407
+requestHostCallback @ chunk-A4PLE5AR.js?v=c2bb4e8f:418
+unstable_scheduleCallback @ chunk-A4PLE5AR.js?v=c2bb4e8f:330
+scheduleCallback$1 @ chunk-A4PLE5AR.js?v=c2bb4e8f:19826
+ensureRootIsScheduled @ chunk-A4PLE5AR.js?v=c2bb4e8f:18652
+scheduleUpdateOnFiber @ chunk-A4PLE5AR.js?v=c2bb4e8f:18562
+updateContainer @ chunk-A4PLE5AR.js?v=c2bb4e8f:20776
+ReactDOMHydrationRoot.render.ReactDOMRoot.render @ chunk-A4PLE5AR.js?v=c2bb4e8f:21116
+(anonymous) @ main.tsx:8Understand this error
+chunk-A4PLE5AR.js?v=c2bb4e8f:19413 Uncaught Error: React.Children.only expected to receive a single React element child.

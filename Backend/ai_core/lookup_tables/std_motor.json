@@ -1,0 +1,740 @@
+[
+  {
+    "motorCode": "4A50A2Y3",
+    "P_dm": 0.09,
+    "n_dm": 2742.0,
+    "torqueRatio": 2.0
+  },
+  {
+    "motorCode": "4A50B2Y3",
+    "P_dm": 0.12,
+    "n_dm": 2710.0,
+    "torqueRatio": 2.0
+  },
+  {
+    "motorCode": "4AA56A2Y3",
+    "P_dm": 0.18,
+    "n_dm": 2760.0,
+    "torqueRatio": 2.0
+  },
+  {
+    "motorCode": "4AA56B2Y3",
+    "P_dm": 0.25,
+    "n_dm": 2760.0,
+    "torqueRatio": 2.0
+  },
+  {
+    "motorCode": "4AA63A2Y3",
+    "P_dm": 0.37,
+    "n_dm": 2750.0,
+    "torqueRatio": 2.0
+  },
+  {
+    "motorCode": "4AA63B2Y3",
+    "P_dm": 0.55,
+    "n_dm": 2745.0,
+    "torqueRatio": 2.0
+  },
+  {
+    "motorCode": "4A71A2Y3",
+    "P_dm": 0.75,
+    "n_dm": 2840.0,
+    "torqueRatio": 2.0
+  },
+  {
+    "motorCode": "4A71B2Y3",
+    "P_dm": 1.1,
+    "n_dm": 2810.0,
+    "torqueRatio": 2.0
+  },
+  {
+    "motorCode": "4A80A2Y3",
+    "P_dm": 1.5,
+    "n_dm": 2850.0,
+    "torqueRatio": 2.0
+  },
+  {
+    "motorCode": "4A80B2Y3",
+    "P_dm": 2.2,
+    "n_dm": 2850.0,
+    "torqueRatio": 2.0
+  },
+  {
+    "motorCode": "4A90L2Y3",
+    "P_dm": 3.0,
+    "n_dm": 2838.0,
+    "torqueRatio": 2.0
+  },
+  {
+    "motorCode": "4A100S2Y3",
+    "P_dm": 4.0,
+    "n_dm": 2880.0,
+    "torqueRatio": 2.0
+  },
+  {
+    "motorCode": "4A100L2Y3",
+    "P_dm": 5.5,
+    "n_dm": 2880.0,
+    "torqueRatio": 2.0
+  },
+  {
+    "motorCode": "4A112M2Y3",
+    "P_dm": 7.5,
+    "n_dm": 2922.0,
+    "torqueRatio": 2.0
+  },
+  {
+    "motorCode": "4A132M2Y3",
+    "P_dm": 11.0,
+    "n_dm": 2907.0,
+    "torqueRatio": 1.6
+  },
+  {
+    "motorCode": "4A160S2Y3",
+    "P_dm": 15.0,
+    "n_dm": 2930.0,
+    "torqueRatio": 1.4
+  },
+  {
+    "motorCode": "4A160M2Y3",
+    "P_dm": 18.5,
+    "n_dm": 2930.0,
+    "torqueRatio": 1.4
+  },
+  {
+    "motorCode": "4A180S2Y3",
+    "P_dm": 22.0,
+    "n_dm": 2940.0,
+    "torqueRatio": 1.4
+  },
+  {
+    "motorCode": "4A180M2Y3",
+    "P_dm": 30.0,
+    "n_dm": 2943.0,
+    "torqueRatio": 1.4
+  },
+  {
+    "motorCode": "4A200M2Y3",
+    "P_dm": 37.0,
+    "n_dm": 2943.0,
+    "torqueRatio": 1.4
+  },
+  {
+    "motorCode": "4A200L2Y3",
+    "P_dm": 45.0,
+    "n_dm": 2946.0,
+    "torqueRatio": 1.4
+  },
+  {
+    "motorCode": "4A225M2Y3",
+    "P_dm": 55.0,
+    "n_dm": 2937.0,
+    "torqueRatio": 1.2
+  },
+  {
+    "motorCode": "4A250S2Y3",
+    "P_dm": 75.0,
+    "n_dm": 2958.0,
+    "torqueRatio": 1.2
+  },
+  {
+    "motorCode": "4A250M2Y3",
+    "P_dm": 90.0,
+    "n_dm": 2958.0,
+    "torqueRatio": 1.2
+  },
+  {
+    "motorCode": "4A280S2Y3",
+    "P_dm": 110.0,
+    "n_dm": 2940.0,
+    "torqueRatio": 1.2
+  },
+  {
+    "motorCode": "4A280M2Y3",
+    "P_dm": 132.0,
+    "n_dm": 2940.0,
+    "torqueRatio": 1.2
+  },
+  {
+    "motorCode": "4A315S2Y3",
+    "P_dm": 160.0,
+    "n_dm": 2943.0,
+    "torqueRatio": 1.0
+  },
+  {
+    "motorCode": "4A315M2Y3",
+    "P_dm": 200.0,
+    "n_dm": 2943.0,
+    "torqueRatio": 1.0
+  },
+  {
+    "motorCode": "4A355S2Y3",
+    "P_dm": 250.0,
+    "n_dm": 2943.0,
+    "torqueRatio": 1.0
+  },
+  {
+    "motorCode": "4A355M2Y3",
+    "P_dm": 315.0,
+    "n_dm": 2940.0,
+    "torqueRatio": 1.0
+  },
+  {
+    "motorCode": "4A50A4Y3",
+    "P_dm": 0.06,
+    "n_dm": 1378.0,
+    "torqueRatio": 2.0
+  },
+  {
+    "motorCode": "4A50B4Y3",
+    "P_dm": 0.09,
+    "n_dm": 1370.0,
+    "torqueRatio": 2.0
+  },
+  {
+    "motorCode": "4AA56A4Y3",
+    "P_dm": 0.12,
+    "n_dm": 1380.0,
+    "torqueRatio": 2.0
+  },
+  {
+    "motorCode": "4AA56B4Y3",
+    "P_dm": 0.18,
+    "n_dm": 1370.0,
+    "torqueRatio": 2.0
+  },
+  {
+    "motorCode": "4AA63A4Y3",
+    "P_dm": 0.25,
+    "n_dm": 1380.0,
+    "torqueRatio": 2.0
+  },
+  {
+    "motorCode": "4AA63B4Y3",
+    "P_dm": 0.37,
+    "n_dm": 1365.0,
+    "torqueRatio": 2.0
+  },
+  {
+    "motorCode": "4A71A4Y3",
+    "P_dm": 0.55,
+    "n_dm": 1370.0,
+    "torqueRatio": 2.0
+  },
+  {
+    "motorCode": "4A71B4Y3",
+    "P_dm": 0.75,
+    "n_dm": 1370.0,
+    "torqueRatio": 2.0
+  },
+  {
+    "motorCode": "4A80A4Y3",
+    "P_dm": 1.1,
+    "n_dm": 1400.0,
+    "torqueRatio": 2.0
+  },
+  {
+    "motorCode": "4A80B4Y3",
+    "P_dm": 1.5,
+    "n_dm": 1400.0,
+    "torqueRatio": 2.0
+  },
+  {
+    "motorCode": "4AX90L4Y3",
+    "P_dm": 2.2,
+    "n_dm": 1420.0,
+    "torqueRatio": 2.0
+  },
+  {
+    "motorCode": "4A100S4Y3",
+    "P_dm": 3.0,
+    "n_dm": 1420.0,
+    "torqueRatio": 2.0
+  },
+  {
+    "motorCode": "4A100L4Y3",
+    "P_dm": 4.0,
+    "n_dm": 1420.0,
+    "torqueRatio": 2.0
+  },
+  {
+    "motorCode": "4A112M4Y3",
+    "P_dm": 5.5,
+    "n_dm": 1425.0,
+    "torqueRatio": 2.0
+  },
+  {
+    "motorCode": "4A132S4Y3",
+    "P_dm": 7.5,
+    "n_dm": 1455.0,
+    "torqueRatio": 2.0
+  },
+  {
+    "motorCode": "4A132M4Y3",
+    "P_dm": 11.0,
+    "n_dm": 1458.0,
+    "torqueRatio": 2.0
+  },
+  {
+    "motorCode": "4A160S4Y3",
+    "P_dm": 15.0,
+    "n_dm": 1460.0,
+    "torqueRatio": 1.4
+  },
+  {
+    "motorCode": "4A160M4Y3",
+    "P_dm": 18.5,
+    "n_dm": 1460.0,
+    "torqueRatio": 1.4
+  },
+  {
+    "motorCode": "4A180S4Y3",
+    "P_dm": 22.0,
+    "n_dm": 1470.0,
+    "torqueRatio": 1.4
+  },
+  {
+    "motorCode": "4A180M4Y3",
+    "P_dm": 30.0,
+    "n_dm": 1470.0,
+    "torqueRatio": 1.4
+  },
+  {
+    "motorCode": "4A200M4Y3",
+    "P_dm": 37.0,
+    "n_dm": 1475.0,
+    "torqueRatio": 1.4
+  },
+  {
+    "motorCode": "4A200L4Y3",
+    "P_dm": 45.0,
+    "n_dm": 1473.0,
+    "torqueRatio": 1.4
+  },
+  {
+    "motorCode": "4A225M4Y3",
+    "P_dm": 55.0,
+    "n_dm": 1470.0,
+    "torqueRatio": 1.2
+  },
+  {
+    "motorCode": "4A250S4Y3",
+    "P_dm": 75.0,
+    "n_dm": 1480.0,
+    "torqueRatio": 1.2
+  },
+  {
+    "motorCode": "4A250M4Y3",
+    "P_dm": 90.0,
+    "n_dm": 1480.0,
+    "torqueRatio": 1.2
+  },
+  {
+    "motorCode": "4A280S4Y3",
+    "P_dm": 110.0,
+    "n_dm": 1465.0,
+    "torqueRatio": 1.2
+  },
+  {
+    "motorCode": "4A280M4Y3",
+    "P_dm": 132.0,
+    "n_dm": 1465.0,
+    "torqueRatio": 1.2
+  },
+  {
+    "motorCode": "4A315S4Y3",
+    "P_dm": 160.0,
+    "n_dm": 1470.0,
+    "torqueRatio": 1.0
+  },
+  {
+    "motorCode": "4A315M4Y3",
+    "P_dm": 200.0,
+    "n_dm": 1475.0,
+    "torqueRatio": 1.0
+  },
+  {
+    "motorCode": "4A355S4Y3",
+    "P_dm": 250.0,
+    "n_dm": 1475.0,
+    "torqueRatio": 1.0
+  },
+  {
+    "motorCode": "4A355M4Y3",
+    "P_dm": 315.0,
+    "n_dm": 1475.0,
+    "torqueRatio": 1.0
+  },
+  {
+    "motorCode": "4AA63A6Y3",
+    "P_dm": 0.18,
+    "n_dm": 885.0,
+    "torqueRatio": 2.0
+  },
+  {
+    "motorCode": "4AA63B6Y3",
+    "P_dm": 0.25,
+    "n_dm": 892.0,
+    "torqueRatio": 2.0
+  },
+  {
+    "motorCode": "4A71A6Y3",
+    "P_dm": 0.37,
+    "n_dm": 920.0,
+    "torqueRatio": 2.0
+  },
+  {
+    "motorCode": "4A71B6Y3",
+    "P_dm": 0.55,
+    "n_dm": 920.0,
+    "torqueRatio": 2.0
+  },
+  {
+    "motorCode": "4A80A6Y3",
+    "P_dm": 0.75,
+    "n_dm": 920.0,
+    "torqueRatio": 2.0
+  },
+  {
+    "motorCode": "4A80B6Y3",
+    "P_dm": 1.1,
+    "n_dm": 920.0,
+    "torqueRatio": 2.0
+  },
+  {
+    "motorCode": "4A90L6Y3",
+    "P_dm": 1.5,
+    "n_dm": 936.0,
+    "torqueRatio": 2.0
+  },
+  {
+    "motorCode": "4A100L6Y3",
+    "P_dm": 2.2,
+    "n_dm": 950.0,
+    "torqueRatio": 2.0
+  },
+  {
+    "motorCode": "4A112MA6Y3",
+    "P_dm": 3.0,
+    "n_dm": 945.0,
+    "torqueRatio": 2.0
+  },
+  {
+    "motorCode": "4A112MB6Y3",
+    "P_dm": 4.0,
+    "n_dm": 950.0,
+    "torqueRatio": 2.0
+  },
+  {
+    "motorCode": "4A132S6Y3",
+    "P_dm": 5.5,
+    "n_dm": 960.0,
+    "torqueRatio": 2.0
+  },
+  {
+    "motorCode": "4A132M6Y3",
+    "P_dm": 7.5,
+    "n_dm": 968.0,
+    "torqueRatio": 2.0
+  },
+  {
+    "motorCode": "4A160S6Y3",
+    "P_dm": 11.0,
+    "n_dm": 970.0,
+    "torqueRatio": 1.2
+  },
+  {
+    "motorCode": "4A160M6Y3",
+    "P_dm": 15.0,
+    "n_dm": 970.0,
+    "torqueRatio": 1.2
+  },
+  {
+    "motorCode": "4A180M6Y3",
+    "P_dm": 18.5,
+    "n_dm": 973.0,
+    "torqueRatio": 1.2
+  },
+  {
+    "motorCode": "4A200M6Y3",
+    "P_dm": 22.0,
+    "n_dm": 975.0,
+    "torqueRatio": 1.2
+  },
+  {
+    "motorCode": "4A200L6Y3",
+    "P_dm": 30.0,
+    "n_dm": 977.0,
+    "torqueRatio": 1.2
+  },
+  {
+    "motorCode": "4A225M6Y3",
+    "P_dm": 37.0,
+    "n_dm": 980.0,
+    "torqueRatio": 1.2
+  },
+  {
+    "motorCode": "4A250S6Y3",
+    "P_dm": 45.0,
+    "n_dm": 985.0,
+    "torqueRatio": 1.2
+  },
+  {
+    "motorCode": "4A250M6Y3",
+    "P_dm": 55.0,
+    "n_dm": 985.0,
+    "torqueRatio": 1.2
+  },
+  {
+    "motorCode": "4A280S6Y3",
+    "P_dm": 75.0,
+    "n_dm": 980.0,
+    "torqueRatio": 1.2
+  },
+  {
+    "motorCode": "4A280M6Y3",
+    "P_dm": 90.0,
+    "n_dm": 980.0,
+    "torqueRatio": 1.2
+  },
+  {
+    "motorCode": "4A315S6Y3",
+    "P_dm": 110.0,
+    "n_dm": 980.0,
+    "torqueRatio": 1.0
+  },
+  {
+    "motorCode": "4A315M6Y3",
+    "P_dm": 132.0,
+    "n_dm": 980.0,
+    "torqueRatio": 1.0
+  },
+  {
+    "motorCode": "4A355S6Y3",
+    "P_dm": 160.0,
+    "n_dm": 982.0,
+    "torqueRatio": 1.0
+  },
+  {
+    "motorCode": "4A355M6Y3",
+    "P_dm": 200.0,
+    "n_dm": 982.0,
+    "torqueRatio": 1.0
+  },
+  {
+    "motorCode": "4A71B8Y3",
+    "P_dm": 0.25,
+    "n_dm": 680.0,
+    "torqueRatio": 1.6
+  },
+  {
+    "motorCode": "4A80A8Y3",
+    "P_dm": 0.37,
+    "n_dm": 675.0,
+    "torqueRatio": 1.6
+  },
+  {
+    "motorCode": "4A80B8Y3",
+    "P_dm": 0.55,
+    "n_dm": 675.0,
+    "torqueRatio": 1.6
+  },
+  {
+    "motorCode": "4A90LA8Y3",
+    "P_dm": 0.75,
+    "n_dm": 705.0,
+    "torqueRatio": 1.6
+  },
+  {
+    "motorCode": "4A90LB8Y3",
+    "P_dm": 1.1,
+    "n_dm": 698.0,
+    "torqueRatio": 1.6
+  },
+  {
+    "motorCode": "4A100L8Y3",
+    "P_dm": 1.5,
+    "n_dm": 698.0,
+    "torqueRatio": 1.6
+  },
+  {
+    "motorCode": "4A112MA8Y3",
+    "P_dm": 2.2,
+    "n_dm": 705.0,
+    "torqueRatio": 1.8
+  },
+  {
+    "motorCode": "4A112MB8Y3",
+    "P_dm": 3.0,
+    "n_dm": 701.0,
+    "torqueRatio": 1.8
+  },
+  {
+    "motorCode": "4A132S8Y3",
+    "P_dm": 4.0,
+    "n_dm": 720.0,
+    "torqueRatio": 1.8
+  },
+  {
+    "motorCode": "4A132M8Y3",
+    "P_dm": 5.5,
+    "n_dm": 716.0,
+    "torqueRatio": 1.8
+  },
+  {
+    "motorCode": "4A160S8Y3",
+    "P_dm": 7.5,
+    "n_dm": 730.0,
+    "torqueRatio": 1.4
+  },
+  {
+    "motorCode": "4A160M8Y3",
+    "P_dm": 11.0,
+    "n_dm": 730.0,
+    "torqueRatio": 1.4
+  },
+  {
+    "motorCode": "4A180M8Y3",
+    "P_dm": 15.0,
+    "n_dm": 730.0,
+    "torqueRatio": 1.2
+  },
+  {
+    "motorCode": "4A200M8Y3",
+    "P_dm": 18.5,
+    "n_dm": 731.0,
+    "torqueRatio": 1.2
+  },
+  {
+    "motorCode": "4A200L8Y3",
+    "P_dm": 22.0,
+    "n_dm": 730.0,
+    "torqueRatio": 1.2
+  },
+  {
+    "motorCode": "4A225M8Y3",
+    "P_dm": 30.0,
+    "n_dm": 735.0,
+    "torqueRatio": 1.2
+  },
+  {
+    "motorCode": "4A250S8Y3",
+    "P_dm": 37.0,
+    "n_dm": 738.0,
+    "torqueRatio": 1.2
+  },
+  {
+    "motorCode": "4A250M8Y3",
+    "P_dm": 45.0,
+    "n_dm": 740.0,
+    "torqueRatio": 1.2
+  },
+  {
+    "motorCode": "4A280S8Y3",
+    "P_dm": 55.0,
+    "n_dm": 734.0,
+    "torqueRatio": 1.2
+  },
+  {
+    "motorCode": "4A280M8Y3",
+    "P_dm": 75.0,
+    "n_dm": 734.0,
+    "torqueRatio": 1.2
+  },
+  {
+    "motorCode": "4A315S8Y3",
+    "P_dm": 90.0,
+    "n_dm": 735.0,
+    "torqueRatio": 1.0
+  },
+  {
+    "motorCode": "4A315M8Y3",
+    "P_dm": 110.0,
+    "n_dm": 735.0,
+    "torqueRatio": 1.0
+  },
+  {
+    "motorCode": "4A355S8Y3",
+    "P_dm": 132.0,
+    "n_dm": 735.0,
+    "torqueRatio": 1.0
+  },
+  {
+    "motorCode": "4A355M8Y3",
+    "P_dm": 160.0,
+    "n_dm": 735.0,
+    "torqueRatio": 1.0
+  },
+  {
+    "motorCode": "4A250S10Y3",
+    "P_dm": 30.0,
+    "n_dm": 590.0,
+    "torqueRatio": 1.2
+  },
+  {
+    "motorCode": "4A250M10Y3",
+    "P_dm": 37.0,
+    "n_dm": 590.0,
+    "torqueRatio": 1.2
+  },
+  {
+    "motorCode": "4A280S10Y3",
+    "P_dm": 37.0,
+    "n_dm": 588.0,
+    "torqueRatio": 1.0
+  },
+  {
+    "motorCode": "4A280M10Y3",
+    "P_dm": 45.0,
+    "n_dm": 588.0,
+    "torqueRatio": 1.0
+  },
+  {
+    "motorCode": "4A315S10Y3",
+    "P_dm": 55.0,
+    "n_dm": 588.0,
+    "torqueRatio": 1.0
+  },
+  {
+    "motorCode": "4A315M10Y3",
+    "P_dm": 75.0,
+    "n_dm": 588.0,
+    "torqueRatio": 1.0
+  },
+  {
+    "motorCode": "4A355S10Y3",
+    "P_dm": 90.0,
+    "n_dm": 588.0,
+    "torqueRatio": 1.0
+  },
+  {
+    "motorCode": "4A355M10Y3",
+    "P_dm": 110.0,
+    "n_dm": 588.0,
+    "torqueRatio": 1.0
+  },
+  {
+    "motorCode": "4A315S12Y3",
+    "P_dm": 45.0,
+    "n_dm": 488.0,
+    "torqueRatio": 1.0
+  },
+  {
+    "motorCode": "4A315M12Y3",
+    "P_dm": 55.0,
+    "n_dm": 488.0,
+    "torqueRatio": 1.0
+  },
+  {
+    "motorCode": "4A355S12Y3",
+    "P_dm": 75.0,
+    "n_dm": 490.0,
+    "torqueRatio": 1.0
+  },
+  {
+    "motorCode": "4A355M12Y3",
+    "P_dm": 90.0,
+    "n_dm": 490.0,
+    "torqueRatio": 1.0
+  }
+]
