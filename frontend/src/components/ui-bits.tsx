@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-export function Card({ title, children, accent, action }: { title?: string; children: ReactNode; accent?: boolean; action?: ReactNode }) {
+export function Card({ title, children, accent, action }: { title?: string| React.ReactNode; children: ReactNode; accent?: boolean; action?: ReactNode }) {
   return (
     <div
       className={`pop-in rounded-2xl p-6 border ${
