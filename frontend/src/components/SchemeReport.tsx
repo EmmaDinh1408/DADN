@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { Card, Result, Badge, Button } from "./ui-bits";
+import { Card, Result, Badge} from "./ui-bits";
+import { Button } from "./ui/button";
 import { ArrowLeft, Cog, Link2, Zap, Sparkles, CheckCircle2, AlertTriangle, FileText, Lollipop, Settings2 } from "lucide-react";
 import { createClient } from "@/utils/supabase/client";
 
