@@ -29,7 +29,7 @@ export function ModuleOptimizer({ onGoto, onSuccess, currentScheme }: { onGoto?:
         throw new Error("Không tìm thấy Scheme hiện tại. Hãy tạo scheme từ màn hình Dự án trước.");
       }
 
-      const res = await fetch("http://127.0.0.1:8000/ai/optimize-design", {
+      const res = await fetch("https://mechdrive-api.onrender.com/ai/optimize-design", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
