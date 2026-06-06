@@ -163,7 +163,7 @@ export function ModuleOptimizer({ onGoto, onSuccess, currentScheme }: { onGoto?:
                   </div>
                 )}
               </div>
-              <Button onClick={run} disabled={loading} className="mt-4">
+              <Button onClick={run} disabled={loading}>
                 {loading ? <Lollipop size={14} className="animate-spin" /> : <Play size={14} />} 
                 {loading ? "Đang tra cứu..." : "Chạy AI Tối Ưu"}
               </Button>

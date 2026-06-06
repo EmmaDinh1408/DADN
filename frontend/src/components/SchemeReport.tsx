@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Card, Result, Badge, Button } from "./ui-bits";
-import { ArrowLeft, Cog, Link2, Zap, Sparkles, CheckCircle2, AlertTriangle, FileText, Lollipop } from "lucide-react";
+import { ArrowLeft, Cog, Link2, Zap, Sparkles, CheckCircle2, AlertTriangle, FileText, Lollipop, Settings2 } from "lucide-react";
 import { createClient } from "@/utils/supabase/client";
 
 export type SchemeDetail = {
@@ -74,9 +74,11 @@ export function SchemeReport({ scheme, onBack, hideBackBtn }: { scheme: SchemeDe
             Bạn cần phải bấm <b className="text-stone-700">Chạy AI Tối Ưu</b> và hoàn thành các bước tính toán qua các tab <b>Động cơ &rarr; Xích &rarr; Bánh răng</b>, sau đó bấm <b>"Tính & hoàn thành"</b> ở bước cuối cùng để hệ thống tạo bản báo cáo này.
           </p>
           {!hideBackBtn && (
-            <Button onClick={onBack} variant="outline" className="mt-4 shadow-sm">
-              <ArrowLeft size={14} className="mr-2" /> Quay lại
+          <div className="mt-4 shadow-sm">
+            <Button onClick={onBack} variant="outline">
+              <ArrowLeft size={16} /> Quay lại
             </Button>
+          </div>
           )}
         </div>
       </div>
