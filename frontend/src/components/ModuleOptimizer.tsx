@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Header } from "./Header";
-import { Card, Badge, Button, Field } from "./ui-bits";
+import { Card, Badge, Field } from "./ui-bits";
+import { Button } from "./ui/button";
 import { Sparkles, Brain, Cog, Link2, Play, ArrowRight, AlertCircle, Lollipop } from "lucide-react";
 import { useWorkflow } from "./workflow";
 
