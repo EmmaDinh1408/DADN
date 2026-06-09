@@ -113,3 +113,4 @@ npm run dev
 
 - Xem `Group_8_Final_Report.pdf` để biết chi tiết kiến trúc hệ thống, mô hình Q-Learning, các ca sử dụng và chiến lược kiểm thử.
 - Để triển khai thực tế, thay đổi `allow_origins` trong `backend/main.py` và bảo mật biến môi trường Supabase.
+- Website: https://mechdrive-nj33oau12-dvydinhs-projects.vercel.app/
