@@ -104,10 +104,10 @@ npm run dev
 
 ## Thành viên nhóm
 
-- **12352286 Đinh Ngụy Nguyệt Hà** — Đặc tả yêu cầu, thiết kế Use Case, kiểm thử
-- **22352171 Dương Lê Nhật Duy** — Thiết kế cơ sở dữ liệu, schema SQL, Supabase
-- **32352715 Trần Thiên Lộc** — Frontend React/TypeScript, UI/UX, tích hợp API
-- **42353350 Đinh Đoàn Vy** — Backend FastAPI, thuật toán Q-Learning, dữ liệu chuẩn JSON
+- **2352286 Đinh Ngụy Nguyệt Hà** — Đặc tả yêu cầu, thiết kế Use Case, kiểm thử
+- **2352171 Dương Lê Nhật Duy** — Thiết kế cơ sở dữ liệu, schema SQL, Supabase
+- **2352715 Trần Thiên Lộc** — Frontend React/TypeScript, UI/UX, tích hợp API
+- **2353350 Đinh Đoàn Vy** — Backend FastAPI, thuật toán Q-Learning, dữ liệu chuẩn JSON
 
 ## Ghi chú
 
